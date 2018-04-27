@@ -35,7 +35,7 @@ public class CalculadoraMockitoTest {
 		when(calc.resta(199, 20)).thenReturn(5);
 		
 		int expectedSuma = 5;
-		assertEquals(expectedSuma,calc.resta(10,5));
+		assertEquals(expectedSuma,calc.resta(199,20));
 	}
 	
 	@Test
