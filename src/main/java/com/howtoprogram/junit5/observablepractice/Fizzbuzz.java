@@ -11,8 +11,10 @@ public class Fizzbuzz {
 	public static String[] getResult(int a, int b) {
 		String[] result= {};
 		if(a<b) {
+			
 		int size = (b-a)+1;
 		result = new String[(size)];
+		
 			for(int i = 1; i<=b; i++) {	
 				if(i%3 == 0 && i%5 == 0) {
 					result[i-1] = "FizzBuzz";

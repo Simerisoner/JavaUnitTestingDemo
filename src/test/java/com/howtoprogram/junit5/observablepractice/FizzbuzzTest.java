@@ -22,11 +22,11 @@ public class FizzbuzzTest {
         assertArrayEquals(listExpected,result);
     }
     
-    @Test
-    @DisplayName("Sholud validate with Observable")
-    void validateWithObservable() {
-    	String[] listExpected = {};
-        String[] result = Fizzbuzz.getResultObs(100,10);
-        assertArrayEquals(listExpected,result);
-    }
+//    @Test
+//    @DisplayName("Sholud validate with Observable")
+//    void validateWithObservable() {
+//    	String[] listExpected = {};
+//        String[] result = Fizzbuzz.getResultObs(100,10);
+//        assertArrayEquals(listExpected,result);
+//    }
 }
