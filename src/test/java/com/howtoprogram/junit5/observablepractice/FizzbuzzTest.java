@@ -21,19 +21,15 @@ public class FizzbuzzTest {
         assertArrayEquals(listExpected, resultArr);
     }
     
-//    @Test
-//    @DisplayName("Should validate fizzbuzz")
-//    void validateFizzbuzzEmpty() { 
-//        String[] listExpected = {};
-//        String[] result = Fizzbuzz.getResult(100,10);
-//        assertArrayEquals(listExpected,result);
-//    }
-    
-//    @Test
-//    @DisplayName("Sholud validate with Observable")
-//    void validateWithObservable() {
-//    	String[] listExpected = {};
-//        String[] result = Fizzbuzz.getResultObs(100,10);
-//        assertArrayEquals(listExpected,result);
-//    }
+    @Test
+    @DisplayName("Should validate fizzbuzz")
+    void validateFizzbuzzEmpty() { 
+        String[] listExpected = {};
+        List<String> result = Fizzbuzz.getResult(100,10);
+        String[] resultArr = new String[result.size()];
+        resultArr = result.toArray(resultArr);
+        
+        assertArrayEquals(listExpected,resultArr);
+    }
+  
 }
